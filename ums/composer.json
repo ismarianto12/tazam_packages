@@ -1,0 +1,27 @@
+{
+    "name": "bryanjack/ums",
+    "description": "Ums GUI Module",
+    "type": "project",
+    "license": "MIT",
+    "version": "1",
+    "authors": [
+        {
+            "name": "bryanjack",
+            "email": "bryanjack99@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Bryanjack\\Ums\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bryanjack\\Ums\\UmsServiceProvider"
+            ]
+        }
+    }
+}

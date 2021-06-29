@@ -1,0 +1,1 @@
+<link href="{{ pkg_asset('dash', 'dependencies/summernote/summernote-lite.min.css') }}" rel="stylesheet">

@@ -1,0 +1,15 @@
+variables:
+  GIT_STRATEGY: clone
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  tags:
+      - kubemas
+  script:
+    - echo $CI_JOB_TOKEN
+    - echo $CI_PROJECT_ID
+    - echo $CI_COMMIT_TAG
+    - 'curl --header "Job-Token: $CI_JOB_TOKEN" --data tag=$CI_COMMIT_TAG "http://git.pdsb.id/api/v4/projects/$CI_PROJECT_ID/packages/composer"'

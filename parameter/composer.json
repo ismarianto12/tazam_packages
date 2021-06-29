@@ -1,0 +1,34 @@
+{
+    "name": "bryanjack/parameter",
+    "description": "Sample Modul Aplikasi",
+    "type": "project",
+    "license": "MIT",
+    "version": "1",
+    "authors": [
+        {
+            "name": "bryanjack",
+            "email": "bryanjack99@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bryanjack\\Aplikasi\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bryanjack\\Aplikasi\\AplikasiServiceProvider"
+            ]
+        }
+    }
+}

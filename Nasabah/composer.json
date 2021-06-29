@@ -1,0 +1,27 @@
+{
+    "name": "bryanjack/nasabah",
+    "description": "Sample Modul Nasabah",
+    "type": "project",
+    "license": "MIT",
+    "version": "1",
+    "authors": [
+        {
+            "name": "bryanjack",
+            "email": "bryanjack99@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Bryanjack\\Nasabah\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bryanjack\\Nasabah\\NasabahServiceProvider"
+            ]
+        }
+    }
+}

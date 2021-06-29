@@ -1,0 +1,1 @@
+<script src="{{ pkg_asset('dash', 'dependencies/ckeditor/ckeditor.js') }}"></script>

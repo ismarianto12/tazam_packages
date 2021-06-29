@@ -1,0 +1,1 @@
+<link href="{{ pkg_asset('dash', 'dependencies/datatables/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css">
